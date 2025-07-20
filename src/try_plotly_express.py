@@ -7,8 +7,6 @@ import plotly.data as sampleData
 # Therefore any function calls on the figure uses the low-level interface.
 # https://plotly.com/python/creating-and-updating-figures/
 
-### PLOTLY EXPRESS HAS TO FUNCTIONS (line and scatter)
-
 ### USING PLOTLY EXPRESS LINE
 
 df_countries = sampleData.gapminder()
@@ -60,3 +58,7 @@ fig3_scatter.show()
 fig4_scatter_facet = px.scatter(df_tips, x='total_bill', y='tip', color='sex', facet_col='smoker')
 fig4_scatter_facet.show()
 
+# Histogram
+
+fig_hist = px.histogram(df_tips, x='day', y='tip') # We would like to plot how much tip we got each day
+fig_hist.show()
