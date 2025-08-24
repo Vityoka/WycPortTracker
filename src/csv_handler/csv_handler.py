@@ -59,9 +59,3 @@ class CsvHandler:
 if __name__ == "__main__":
     path = "data/data.csv"
     csv = CsvHandler(path)
-
-
-
-    
-
-    
